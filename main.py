@@ -2,11 +2,11 @@ import email
 import imaplib
 from email.header import decode_header
 import pandas as pd
-from startsend import StartSend
+
 import sys
 import urllib
 import requests
-sms = StartSend('2a2cd05af75968e2a3870825d8370957', 'ru')
+
 
 mail_pass = "wrerkbxcndbfxqni"
 username = "sonic269@yandex.ru"
@@ -55,8 +55,4 @@ print(*names)
 print(letter_from)
 print(letter_date)
 
-Tel_number = '89037758878'
-text = 'Нет, это не танк плохой, а водитель'
 
-
-sms.send_quick_sms(text, Tel_number)
